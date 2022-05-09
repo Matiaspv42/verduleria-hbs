@@ -1,0 +1,20 @@
+<div class="card mx-2 my-2" style="width: 18rem;">
+  <img src="/public/imagenes/{{this.img}}" class="card-img-top" alt="..." id="imagenProducto{{this.id}}">
+  <div class="card-body">
+    <p class="card-text">
+      <p>
+           {{this.nombre}} 
+           <input type="number" id="cantidadProducto{{this.id}}" max="20" min="1" step="1">
+           <button type="button" class="btn btn-danger position-relative botonCompra" id="{{this.id}}" data-nombre="{{this.nombre}}" data-precio="{{this.precio}}" data-img="{{this.img}}" data-id="{{this.id}}" data-cantidadId="cantidadProducto{{this.id}}"  onclick="agregarCarro(this)"> 
+          <i class="fa-solid fa-cart-shopping" id="buttonShop"></i>
+          </button>
+      </p>
+      <p>
+        Precio: ${{this.precio}} 
+      </p>
+      
+    </p>
+
+  </div>
+</div>
+

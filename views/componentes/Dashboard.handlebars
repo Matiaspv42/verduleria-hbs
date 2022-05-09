@@ -1,0 +1,9 @@
+<div class="container">
+        <div class="row mt-5">
+            {{#each productos}}
+                {{> Cards 
+                data = "{{this}}"
+                }}
+            {{/each}}
+        </div>
+</div>
